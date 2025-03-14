@@ -18,7 +18,9 @@ html{
 *{
     font-family: 'Work Sans',sans-serif;
 }
-
+body {
+    overflow-x: hidden;
+}
 body.transition {
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
