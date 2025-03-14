@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A & K 💖 </title>
+    <!-- favicon -->
+    <link rel="icon" href="">
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans&display=swap" rel="stylesheet">
+
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- lightbox2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" 
+    integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font awesome6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="overflow-hidden">
+    <!-- music -->
+    <audio src="assets/audio/Gempi - Ajaib (Official Music Video).mp3" loop class="music"></audio>
+    <!-- sfx door -->
+    <audio src="assets/audio/Door.mp3" class="sound-door"></audio>
+
+
+    <!-- content section -->
+    <div id="content-section">
+      <!-- navbar -->
+      <ul class="nav">
+        <span class="music"></span>
+        <li>
+          <a href="#" class="nav-item-music rotate" id="music-button" onclick="toggleMusic(event)">
+            <i class="fas fa-fw fa-compact-disc"></i>          
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- hero section -->
+    <section id="hero-section" class="d-flex align-items-end" onclick="mulai()">
+      <img src="assets/img/sparkle.gif" alt="sparkle" class="sparkle">
+      <!-- <iframe src="https://giphy.com/embed/l1J9EQhfkb8tPu836" class="sparkle"></iframe> -->
+      <div class="container text-center">
+        <h4 class="my-2 text-white">Kepada Yth <span id="nama-sambutan"></span></h4>
+        <!-- <h1 class="my-2 text-white huruf-sambung">K & A</h1> -->
+        <!-- <h4 class="my-2 text-white">Akan segera melangsungkan pernikahan pada tanggal</h4>
+        <h4 class="my-2 text-white fw-bold">Ahad, 25 Mei 2025</h4> -->
+        <!-- <div class="row my-3 d-flex justify-content-center" id="countdown-wedding">
+          <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5>Hari</div></div>
+          <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5>Jam</div></div>
+          <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5>Menit</div></div>
+          <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5>Detik</div></div>
+        </div> -->
+        <a href="#pembuka-section" class="rounded-pill btn btn-lg btn-get-started py-3"> 
+          <i class="fas fa-fw fa-envelope-open-text"></i>Buka Undangan</a>
+      </div>
+    </section>
+    
+
+    <!-- pembuka section -->
+    <section id="pembuka-section" class="pembuka-section section-bg py-5">
+      <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500s">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h1 class="text-pink huruf-sambung fw-bold">ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</h1>
+              <h3>بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h3>
+              <p> لَيْسَ عَلَى الْاَعْمٰى حَرَجٌ وَّلَا عَلَى الْاَعْرَجِ حَرَجٌ وَّلَا عَلَى الْمَرِيْضِ حَرَجٌ وَّلَا عَلٰٓى اَنْفُسِكُمْ اَنْ تَأْكُلُوْا مِنْۢ بُيُوْتِكُمْ اَوْ بُيُوْتِ اٰبَاۤىِٕكُمْ اَوْ بُيُوْتِ اُمَّهٰتِكُمْ اَوْ بُيُوْتِ اِخْوَانِكُمْ اَوْ بُيُوْتِ اَخَوٰتِكُمْ اَوْ بُيُوْتِ اَعْمَامِكُمْ اَوْ بُيُوْتِ عَمّٰتِكُمْ اَوْ بُيُوْتِ اَخْوَالِكُمْ اَوْ بُيُوْتِ خٰلٰتِكُمْ اَوْ مَا مَلَكْتُمْ مَّفَاتِحَهٗٓ اَوْ صَدِيْقِكُمْۗ لَيْسَ عَلَيْكُمْ جُنَاحٌ اَنْ تَأْكُلُوْا جَمِيْعًا اَوْ اَشْتَاتًاۗ فَاِذَا دَخَلْتُمْ بُيُوْتًا فَسَلِّمُوْا عَلٰٓى اَنْفُسِكُمْ تَحِيَّةً مِّنْ عِنْدِ اللّٰهِ مُبٰرَكَةً طَيِّبَةًۗ كَذٰلِكَ يُبَيِّنُ اللّٰهُ لَكُمُ الْاٰيٰتِ لَعَلَّكُمْ تَعْقِلُوْنَࣖ ۝٦١ </p>
+              <p>Tidak ada halangan bagi orang buta, tidak (pula) bagi orang pincang, tidak (pula) bagi orang sakit, dan <b>tidak (pula) bagi dirimu, makan (bersama-sama mereka) di rumah kamu </b> atau di rumah bapak-bapakmu, di rumah ibu-ibumu, di rumah saudara-saudaramu yang laki-laki, di rumah saudara-saudaramu yang perempuan, di rumah saudara-saudara bapakmu yang laki-laki, di rumah saudara-saudara bapakmu yang perempuan, di rumah saudara-saudara ibumu yang laki-laki, di rumah saudara-saudara ibumu yang perempuan, (di rumah) yang kamu miliki kuncinya <b>atau (di rumah) kawan-kawanmu. Tidak ada halangan bagi kamu makan bersama-sama mereka atau sendiri-sendiri</b>. Apabila kamu memasuki rumah-rumah hendaklah kamu memberi salam (kepada penghuninya, yang berarti memberi salam) kepada dirimu sendiri, dengan salam yang penuh berkah dan baik dari sisi Allah. Demikianlah Allah menjelaskan ayat-ayat(-Nya) bagimu, agar kamu mengerti. ”</p>
+              <p>- Q.S An-Nur : 62 -</p>
+            </div>
+            <div class="section-title2 text-center">
+              <p>"Makanlah kalian bersama-sama dan bacalah basmalah, maka Allah akan memberikan berkah kepada kalian semua"</p>
+              <p>- HR Abu Dawud -</p>
+            </div>
+            
+            <div class="row my-4 justify-content-center"> 
+              <!-- <div class="col-lg-8 text-center"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2500s"> -->
+                <!-- <img src="assets/img/images.jpeg" alt="wedding" class="img-fluid rounded-pill"> -->
+              </div>
+            </div>
+
+            <div class="row my-3 justify-content-between">
+             <!-- Pengantin Perempuan -->
+              <div class="col rounded"  data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"> 
+                <div class="p-2 pt-3 text-center">
+                  <img src="assets/img/a1.png" alt="wedding" class="img-fluid rounded-pill">
+                  <h1 class="text-center huruf-sambung">AKU</h1>
+                </div>
+              </div>
+              <!-- Pemisah -->
+              <div class="col-sm-1 my-auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <h1 class="text-center huruf-sambung"> & </h1>
+              </div>
+              <!-- Pengantin Laki-Laki -->
+              <div class="col rounded"  data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500"> 
+                <div class="p-2 pt-3 text-center">
+                  <img src="assets/img/a2.png" alt="wedding" class="img-fluid rounded-pill">
+                  <h1 class="text-center huruf-sambung">KAMU</h1>
+                </div>
+                <!-- Pemisah -->
+              <div class="col-sm-1 my-auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <h1 class="text-center huruf-sambung"> & </h1>
+              </div>
+              <!-- Pengantin Laki-Laki -->
+              <div class="col rounded"  data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"> 
+                <div class="p-2 pt-3 text-center">
+                  <img src="assets/img/a3.jpg" alt="wedding" class="img-fluid rounded-pill">
+                  <h1 class="text-center huruf-sambung">KITA</h1>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <!-- acara section -->
+    <section id="acara-section" class="acara-section py-5 "> <!--tidak perlu ditambahkan mb-5 karena masih ada lanjutannya-->
+      <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h1 class="text-pink huruf-sambung fw-bold">Acara Buka Bersama Muda Mudi BPS Kabupaten Bengkulu Selatan</h1>
+              <p>Dengan memohon rahmat dan ridho Tuhan, Allah SWT, kita bermaksud menyelenggarakan acara kita</p>
+            </div>
+            <div class="row justify-content-between px-3 text-center">
+              <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                <h4>Bukber</h4>
+                <hr>
+                <p> <i class="fas fa-fw fa-calendar-day"></i>Ahad, 16 Maret 2025</p>
+                <p> <i class="fas fa-fw fa-clock"></i>17:00 WIB - Selesai</p>
+                <p> <i class="fas fa-fw fa-location-dot"></i>Rumah Ayuk Meri Mirnawati</p>
+                <!-- link untuk generator calendar : https://decomaan.github.io/google-calendar-link-generator/ -->
+                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah+AK&details=Akad+Nikah+%23KUA&location=Gedung+Masa+Depan+Kami&dates=20250525T010000Z%2F20250525T050000Z" 
+                class="btn btn-lg btn-pink rounded-pill" target="_blank">
+                  <i class=" fas fa-fw fa-calendar-day"></i>Simpan ke Kalender</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lokasi Section -->
+    <section id="location-section" class="lokasi-section py-5 section-bg">
+      <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h1 class="text-pink huruf-sambung fw-bold">Lokasi Buka Bersama Muda Mudi BPS Kabupaten Bengkulu Selatan</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-12 text-center">
+                <a href="https://maps.app.goo.gl/5QbUUo7UraqFxevH8" target="_blank" class="btn btn-lg btn-pink rounded-pill mb-4">
+                  <i class="fas fa-fw fa-location-dot"></i>Klik untuk Membuka Peta</a>
+                  <iframe src="https://www.google.com/maps/embed?pb=!4v1741930868035!6m8!1m7!1sQngSzmk-jtsFDnfxOR-TZQ!2m2!1d-4.465277799402953!2d102.9004399320506!3f57.17588783358259!4f-17.116254284330225!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- love story section -->
+    <section id="love-story-section" class="love-story-section py-5">
+      <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="section-title">
+          <h1 class="text-pink huruf-sambung fw-bold">Rangkaian Buka Bersama</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg">
+            <ul class="timeline">
+              <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"> 
+                <div class="timeline-badge" style="background-image: url('assets/img/timeline/timeline1.jpeg');">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3 class="timeline-title">Membawa Makanan Sesuai Inisial Nama Panggilan</h3>
+                    <!-- <span class="timeline-date">18 Maret 2018</span> -->
+                  </div>
+                  <div class="timeline-body">
+                    <p>untuk seru-seruan kita, diharapkan membawa makanan/cemilan sesuai inisial nama yang digunakan di Kantor BPS Kabupaten Bengkulu Selatan, Jangan ada yang sama yaa hihi..                 
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500"> 
+                <div class="timeline-badge" style="background-image: url('assets/img/timeline/timeline-2.png');">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3 class="timeline-title">Dress Code</h3>
+                    <!-- <span class="timeline-date">4 Desember 2020</span> -->
+                  </div>
+                  <div class="timeline-body">
+                    <p>Tidak ada dresscode dresscode-an, yang penting hadir dengan menggunakan pakaian terbaikmu WKKW                 
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"> 
+                <div class="timeline-badge" style="background-image: url('assets/img/timeline/timeline-3.jpg');">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3 class="timeline-title">Menu</h3>
+                    <!-- <span class="timeline-date">28 Juni 2021</span> -->
+                  </div>
+                  <div class="timeline-body">
+                    <p>Untuk mengurangi keribetan yang hqq, baiknya kita beli makan berat yang sudah jadi saja dan makan bersama di tempat yuk meri. 
+                      Silahkan isi pilihan tempat dan menu makanan yang diinginkan pada bagian RSVP </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500"> 
+                <div class="timeline-badge" style="background-image: url('assets/img/timeline/timeline-5.png');">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3 class="timeline-title">Tidak Hadir</h3>
+                    <!-- <span class="timeline-date">25 Oktober 2021</span> -->
+                  </div>
+                  <div class="timeline-body">
+                    <p>Hanya menerima "InsyaAllah" yang benar2 "InsyaAllah", tidak menerima "InsyaAllah" yang sebenarnya "Tidak". Jika ada halangan,
+                      tetap mengisi RSVP             
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"> 
+                <div class="timeline-badge" style="background-image: url('assets/img/timeline/timeline-4.png');">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3 class="timeline-title">Harapan</h3>
+                    <!-- <span class="timeline-date">17 November 2023</span> -->
+                  </div>
+                  <div class="timeline-body">
+                    <p>Besar harapan jika kita juga bisa terawih bersama di tempat yuk Meri agar waktu kumpul kita semakin panjang dan pulang ke rumah dengan keadaan sudah ibadah.
+                      Imam : Muhammad fauzi fahzan Ariski dan Muhammad Pasya Fitra Paligie 
+                      Kenapa dan? karena gantian biar adil dan bisa terlaksana(?)
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeri Section -->
+    <section id="gallery-section" class="gallery-section py-5 section-bg">
+      <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="section-title">
+          <h1 class="huruf-sambung text-pink fw-bold">Gallery</h1>
+        </div>
+        <div class="row" data-mansory='{"percentPosition": true}'>
+          <div class="col-sm-1 col-lg-1 mb-1">
+            <a href="assets/img/gallery/6.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/6.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-1 col-lg-1 mb-1">
+            <a href="assets/img/gallery/2.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/2.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-2">
+            <a href="assets/img/gallery/3.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/3.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-2">
+            <a href="assets/img/gallery/4.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/4.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-2">
+            <a href="assets/img/gallery/10.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/10.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-2">
+            <a href="assets/img/gallery/7.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/7.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-2">
+            <a href="assets/img/gallery/8.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/8.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-2">
+            <a href="assets/img/gallery/9.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/9.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-2">
+            <a href="assets/img/gallery/1.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/1.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-2">
+            <a href="assets/img/gallery/11.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/11.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-1 col-lg-1 mb-1">
+            <a href="assets/img/gallery/12.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/12.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-2">
+            <a href="assets/img/gallery/14.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/14.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-2">
+            <a href="assets/img/gallery/13.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/13.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+          <div class="col-sm-3 col-lg-2 mb-2">
+            <a href="assets/img/gallery/15.jpeg" data-lightbox="KITA" class="text-decoration-none">
+              <img src="assets/img/gallery/15.jpeg" alt="KITA" class="card-img border-pink">
+            </a>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <video width="640" height="360" controls>
+                <source src="assets/img/gallery/WhatsApp Video 2025-03-14 at 16.27.15 (1).mp4" type="video/mp4">
+                <source src="video.ogg" type="video/ogg">
+               Video Kita
+              </video>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <video width="640" height="360" controls>
+                <source src="assets/img/gallery/WhatsApp Video 2025-03-14 at 16.27.15.mp4" type="video/mp4">
+                <!-- <source src="video.ogg" type="video/ogg"> -->
+                Video Kita
+              </video>
+            </div>
+          </div>       
+      </div>
+    </section>
+
+    <!-- rsvp section -->
+    <section id="rsvp-section" class="rsvp-section py-5 section-bg">
+      <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h1 class="huruf-sambung text-pink fw-bold">Konfirmasi Kehadiran</h1>
+              <p>Isi form dibawah ini untuk melakukan konfirmasi kehadiran</p>
+            </div>
+            <form class="row row-cols-lg-auto g-3 align-items-center justify-content-center"  
+            method="POST" 
+            action="https://script.google.com/macros/s/AKfycbzrj6DXEIYbgcI9N2F_JnvUesTvilt4tFPWtF7GC5lNV0Zh8PNn8HQhcx5rdPaOzmrM/exec" 
+            id="my-form">
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="nama" name="nama">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="status" class="form-label">Konfirmasi</label>
+                  <select name="status" id="status" class="form-select" >
+                    <option selected>Pilih salah satu</option>
+                    <option value="1">Hadir</option>
+                    <option value="2">Tidak Hadir</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="tempat" class="form-label">Tempat Makan</label>
+                  <select name="tempat" id="tempat" class="form-select" >
+                    <option selected>Pilih salah satu</option>
+                    <option value="1">Lesehan Jeffry</option>
+                    <option value="2">Pecel Lele Taspen</option>
+                    <option value="2">Tempat Lain Saja</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="menu" class="form-label">Menu Makan</label>
+                  <input type="text" class="form-control" id="menu" name="menu">
+                </div>
+              </div>
+              <div class="col-12 " style="margin-top: 35px;" >
+                <button class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- closing section -->
+    <section id="closing-section" class="closing-section py-5">
+      <!-- <img src="assets/img/sparkle.gif" alt="sparkle" class="sparkle"> -->
+      <!-- <iframe src="https://giphy.com/embed/l1J9EQhfkb8tPu836" class="sparkle"></iframe> -->
+      <div class="container text-center justify-content-center align-items-center">
+        <h4 class="my-2 text-pink fw-bold">Sampai Berjumpa di Hari Minggu</h4>
+        <h1 class="my-2 text-pink huruf-sambung fw-bold">di Tempat Yuk Meri...</h1>
+        <a href="assets/img/gallery/4.jpeg" data-lightbox="KITA" class="text-decoration-none">
+          <img src="assets/img/gallery/4.jpeg" alt="KITA" class="card-img border-pink">
+        </a>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section id="footer" class="footer py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col text-center mb-4">
+            <small class="block justify-content-center">&copy;2025 Kinkareine. All Right Reserved <br></small>
+            <small class="block">Design by <a href="https://instagram.com/kinkareine">Kin</a><br><hr> </small>
+          </div>  
+        </div>
+      </div>
+    </section>
+
+    <!-- jquery3 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous"></script>
+    <!-- bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Install plugin lightbox2 (plugin galeri) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js" 
+    integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- install plugin sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.3/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Memasang plugin mansori bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" 
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" 
+    async></script>
+
+    <!-- js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
