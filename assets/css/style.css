@@ -35,7 +35,35 @@ body.transition {
         opacity: 1;
     }
 }
+/* Untuk layar besar, seperti desktop */
+@media (min-width: 1024px) {
+  /* Gaya khusus untuk perangkat dengan lebar layar lebih besar dari 1024px */
+  .container {
+    width: 80%;
+  }
+}
 
+/* Untuk tablet (lebar layar antara 768px dan 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  /* Gaya untuk tablet */
+  .container {
+    width: 90%;
+  }
+}
+
+/* Untuk ponsel (lebar layar kurang dari 768px) */
+@media (max-width: 768px) {
+  /* Gaya untuk ponsel */
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Mengubah ukuran font untuk ponsel */
+  h1 {
+    font-size: 1.5em;
+  }
+}
 
 .nav {
     position: fixed;
