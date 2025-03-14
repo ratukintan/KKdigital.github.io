@@ -217,7 +217,7 @@ body.transition {
 
  /*Mobile Phone*/
  @media(max-width : 480px){
-    .door .card-acara {
+    .door .card-acara .hero-section .pembuka-section .rsvp-section{
         max-width: 100%;
     }
  }
