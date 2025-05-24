@@ -46,6 +46,11 @@ body.transition {
     100% { opacity: 1; }
 }
 
+.noscroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+  
 /* ===== Scrollbar Styles ===== */
 ::-webkit-scrollbar {
     width: 8px;
