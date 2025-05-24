@@ -8,38 +8,49 @@ if(tempMusic){
     music.src =tempMusic
 }
 
-//door mulai
+
 function mulai() {
-    //back to top
-    window.scrollTo(0,0)
+  document.body.classList.remove('noscroll');
 
-    //sound door
-    var soundDoor =document.querySelector('.sound-door')
-    soundDoor.play()
-
-    //door section
-    var doorSection = $('#door-section')
-    var doors = document.querySelectorAll('.door')
-    doors.forEach(function(door, index){
-        var direction = (index === 0) ? -1 : 1 //artinya jika index === 0 maka -1 else 1 (pengkondisian dalam satu baris/ifels satu baris)
-        door.style.transform = 'rotateY(' + (70 * direction) + 'deg)'
-    })
-
-    //set time out
-    setTimeout(function() {
-        //music play
-        music.play()
-        doorSection.css('transform','scale(6)')
-    }, 600)
-
-    //set timeout door section
-    setTimeout(function() {
-        doorSection.css('opacity', 0)
-        $('body').removeClass('overflow-hidden')
-        $('body').addClass('transition')
-        doorSection.css('display','none') 
-    },2000) //waktu untuk transisi pintunya bertahan
+  // Optional: Scroll otomatis ke section selanjutnya
+  const nextSection = document.getElementById("pembuka-section");
+  if (nextSection) {
+    nextSection.scrollIntoView({ behavior: "smooth" });
+  }
 }
+
+// //door mulai
+// function mulai() {
+//     //back to top
+//     window.scrollTo(0,0)
+
+//     //sound door
+//     var soundDoor =document.querySelector('.sound-door')
+//     soundDoor.play()
+
+//     //door section
+//     var doorSection = $('#door-section')
+//     var doors = document.querySelectorAll('.door')
+//     doors.forEach(function(door, index){
+//         var direction = (index === 0) ? -1 : 1 //artinya jika index === 0 maka -1 else 1 (pengkondisian dalam satu baris/ifels satu baris)
+//         door.style.transform = 'rotateY(' + (70 * direction) + 'deg)'
+//     })
+
+//     //set time out
+//     setTimeout(function() {
+//         //music play
+//         music.play()
+//         doorSection.css('transform','scale(6)')
+//     }, 600)
+
+//     //set timeout door section
+//     setTimeout(function() {
+//         doorSection.css('opacity', 0)
+//         $('body').removeClass('overflow-hidden')
+//         $('body').addClass('transition')
+//         doorSection.css('display','none') 
+//     },2000) //waktu untuk transisi pintunya bertahan
+// }
 
 //buton music
 var isPlaying = true
