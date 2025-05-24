@@ -139,22 +139,24 @@ body.transition {
 }
 
 #hero-section::before {
-    content: "";
+    background: rgba(241,78,149,0.4);
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
-    background: rgba(241,78,149,0.4);
+    z-index: 1;
 }
 
 #hero-section .container {
     position: relative;
+    z-index: 2;
 }
+
 
 #hero-section h1 {
     font-size: 64px;
 }
 
 #hero-section .btn-get-started {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px 20px;
     text-transform: uppercase;
     font-weight: bold;
@@ -164,7 +166,11 @@ body.transition {
     color: var(--pink);
     background: var(--white);
     transition: 0.5s;
+    border: 2px solid var(--pink);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 3;
 }
+
 
 #hero-section .btn-get-started:hover {
     background: var(--pink-hover);
@@ -176,6 +182,7 @@ body.transition {
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 0;
 }
 
 /* ===== Text Colors ===== */
