@@ -634,9 +634,3 @@ h1, .section-title h3 {
       top: 10px;
     }
   }
-  
-  /* Tambahkan sementara CSS ini untuk debug: */
-  * {
-    outline: 1px solid red; /* supaya kelihatan batas elemen */
-  }
-  
